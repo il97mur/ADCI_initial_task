@@ -1,5 +1,4 @@
 @import vars
-// @import fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:700,700i&display=swap')
 @import libs
 
@@ -87,7 +86,7 @@ body
 .header
 	width: 100%
 	height: 130px
-	background-color: #353436
+	background-color: $brown
 	position: absolute
 	z-index: 1
 	display: flex
@@ -162,7 +161,7 @@ body
 
 .submenu__ul
 	list-style-type: none
-	background-color: #353436
+	background-color: $brown
 	margin: 0
 	padding: 5px 10px
 
@@ -225,7 +224,7 @@ body
 	align-items: center
 
 .popup-window-content
-	background-color: #353436
+	background-color: $brown
 	width: 50%
 	position: relative
 	&__headline
@@ -330,42 +329,6 @@ body
 	justify-content: flex-end		
 
 // НОВАЯ ПАНЕЛЬ
-	
-.slider-content__h2
-
-
-.slider-content__headline
-	padding: 12px 23px 5px 15px
-	flex: 1 1 0
-	&_bg-brown
-		background-color: $accent
-	&_bg-white
-		background-color: #ffffff
-	&_bg-black
-		background-color: #000000
-
-.slider-content-text-line__item
-	padding: 0px 40px 10px 15px
-	flex: 1 1 0
-	&_bg-brown
-		background-color: $accent
-	&_bg-white
-		background-color: #ffffff
-	&_bg-black
-		background-color: #000000
-
-.slider-content__text
-	font-family: $default-font
-	font-weight: 400
-	font-size: 16px
-	color: #000000
-	letter-spacing: 0
-	line-height: 26px
-	&_white
-		color: #ffffff
-
-.h2_white
-	color: #ffffff
 
 // Начало: Стили для надписи в слайде
 
@@ -462,14 +425,38 @@ body
 	flex-direction: column
 	justify-content: space-between
 
-.slider-content__item_bg-brown
-	background-color: $accent
+.slider-content__headline
+	padding: 12px 23px 5px 15px
+	flex: 1 1 0
+	&_bg-brown
+		background-color: $accent
+	&_bg-white
+		background-color: #ffffff
+	&_bg-black
+		background-color: #000000
 
-.slider-content__item_bg-white
-	background-color: #ffffff
+.slider-content-text-line__item
+	padding: 0px 40px 10px 15px
+	flex: 1 1 0
+	&_bg-brown
+		background-color: $accent
+	&_bg-white
+		background-color: #ffffff
+	&_bg-black
+		background-color: #000000
 
-.slider-content__item_bg-black
-	background-color: #000000
+.slider-content__text
+	font-family: $default-font
+	font-weight: 400
+	font-size: 16px
+	color: #000000
+	letter-spacing: 0
+	line-height: 26px
+	&_white
+		color: #ffffff
+
+.h2_white
+	color: #ffffff
 	
 
 // Конец: Стили для выезжающего блока по нажатию стрелки вверх
@@ -549,7 +536,7 @@ body
 	display: flex
 	justify-content: center
 	width: 100%
-	background-color: #353436
+	background-color: $brown
 	padding: 33px 0px 15px 0px
 
 .footer-information
@@ -673,7 +660,6 @@ body
 	display: inline-block
 	color: #ffffff
 	
-
 .lang
 	position: absolute
 	right: 0

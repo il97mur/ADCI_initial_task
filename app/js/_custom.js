@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		speed : 1000,
 		easing: 'ease',
 		infiniteLoop: true,
-		// auto: true,
+		auto: true,
 		pause: 10000,
 		controls: false,
 			
