@@ -36,6 +36,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 	});
 
+	$('.hamburger').on('click', function(){
+		$('.hamburger').toggleClass('is-active');
+		$('.nav__menu_small').slideToggle();
+	});
+
 
 
 	$(".menu__submenu").hide(); // скрываем выпадающее меню
